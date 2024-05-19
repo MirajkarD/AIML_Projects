@@ -1,0 +1,12 @@
+<!-- home.html -->
+
+{% extends "base.html" %} {% block content %}
+<div class="container mt-5">
+  <h2>Welcome to Diabetes Prediction System</h2>
+  {% if user_authenticated %}
+  <p>Hello, authenticated user!</p>
+  {% else %}
+  <p>You are not logged in. Please log in to access more features.</p>
+  {% endif %}
+</div>
+{% endblock %}
